@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0427.1803                               -->
+<workbook source-build='2020.1.3 (20201.20.0427.1803)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='groupped_request_year_month_ext' inline='true' name='federated.1gmbloq0zka94i1bozdfx0faq3jn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='groupped_request_year_month_ext' name='textscan.1xacjs7146gns019ktl541jr4sil'>
+            <connection class='textscan' directory='C:/Users/mfa2g/Desktop/nss/projects/hubnashville-bobcat/data' filename='groupped_request_year_month_ext.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xacjs7146gns019ktl541jr4sil' name='groupped_request_year_month_ext.csv' table='[groupped_request_year_month_ext#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Request Type' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='integer' name='month' ordinal='3' />
+            <column datatype='integer' name='request_count' ordinal='4' />
+            <column datatype='string' name='year_month' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[groupped_request_year_month_ext.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[groupped_request_year_month_ext.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Request Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Request Type]</local-name>
+            <parent-name>[groupped_request_year_month_ext.csv]</parent-name>
+            <remote-alias>Request Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[groupped_request_year_month_ext.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[groupped_request_year_month_ext.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>request_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[request_count]</local-name>
+            <parent-name>[groupped_request_year_month_ext.csv]</parent-name>
+            <remote-alias>request_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[year_month]</local-name>
+            <parent-name>[groupped_request_year_month_ext.csv]</parent-name>
+            <remote-alias>year_month</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Request Type]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Request Count' datatype='integer' name='[request_count]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column caption='Year Month' datatype='string' name='[year_month]' role='dimension' type='nominal' />
+      <column-instance column='[F1]' derivation='Avg' name='[avg:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Request Type]' derivation='None' name='[none:Request Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/mfa2g/Documents/My Tableau Repository/Datasources/2020.1/en_US-US/groupped_request_year_month_ext.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2020 04:25:29 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='groupped_request_year_month_ext' increment-value='%null%' refresh-type='create' rows-inserted='398' timestamp-start='2020-05-19 16:25:29.917' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>groupped_request_year_month_ext.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>398</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Request Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Request Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Request Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>groupped_request_year_month_ext.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>groupped_request_year_month_ext.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>3</ordinal>
+              <family>groupped_request_year_month_ext.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>request_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[request_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>request_count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>groupped_request_year_month_ext.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>259</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year_month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[year_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_month</remote-alias>
+              <ordinal>5</ordinal>
+              <family>groupped_request_year_month_ext.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.509615' measure-ordering='alphabetic' measure-percentage='0.490385' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Request Type:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#45a2b9'>
+              <bucket>&quot;Property Violations&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;Public Safety&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;Trash, Recycling &amp; Litter&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;COVID-19&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Planning &amp; Zoning&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Streets, Roads &amp; Sidewalks&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Storm Relief&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Public Records Request&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Parks&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Education &amp; Libraries&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Workforce &amp; Jobs&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Permits&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Transit&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Electric &amp; Water General&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Quick Requests&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hands On Volunteers&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;[federated.1gmbloq0zka94i1bozdfx0faq3jn].[avg:F1:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:F1:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1gmbloq0zka94i1bozdfx0faq3jn].[avg:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='monthly trends' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Request Type' />
+        <param name='target' value='monthly trends' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='monthly trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='24'>hubNashville Monthly Request Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='groupped_request_year_month_ext' name='federated.1gmbloq0zka94i1bozdfx0faq3jn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gmbloq0zka94i1bozdfx0faq3jn'>
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='string' name='[Request Type]' role='dimension' type='nominal' />
+            <column-instance column='[F1]' derivation='Avg' name='[avg:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Avg' name='[avg:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Request Type]' derivation='None' name='[none:Request Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year_month]' derivation='None' name='[none:year_month:nk]' pivot='key' type='nominal' />
+            <column caption='Request Count' datatype='integer' name='[request_count]' role='measure' type='quantitative' />
+            <column-instance column='[request_count]' derivation='Sum' name='[sum:request_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Year Month' datatype='string' name='[year_month]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1gmbloq0zka94i1bozdfx0faq3jn].[avg:F1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1gmbloq0zka94i1bozdfx0faq3jn].[avg:Number of Records:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]'>
+            <groupfilter function='member' level='[none:Request Type:nk]' member='&quot;Quick Requests&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]</column>
+            <column>[federated.1gmbloq0zka94i1bozdfx0faq3jn].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='vertical-align' field='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:year_month:nk]' value='auto' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='vertical-align' value='auto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:year_month:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='3' />
+            <format attr='stroke-color' id='refline0' value='#f1ce63' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='stroke-color' id='refline1' value='#f1ce63' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='solid' />
+            <format attr='reverse-palette' id='refline2' value='false' />
+            <format attr='stroke-size' id='refline2' value='3' />
+            <format attr='stroke-color' id='refline2' value='#4e79a7' />
+            <format attr='fill-color' id='refline2' value='#00000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' value='Select Request Type' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:request_count:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:request_count:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:request_count:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:request_count:qk]' z-order='2' />
+            <reference-line axis-column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:request_count:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='stdev' id='refline2' label-type='automatic' scope='per-pane' symmetric='false' type='sample' value-column='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:request_count:qk]' z-order='3'>
+              <reference-line-value factor='-2' />
+              <reference-line-value factor='2' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gmbloq0zka94i1bozdfx0faq3jn].[sum:request_count:qk]</rows>
+        <cols>[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:year_month:nk]</cols>
+      </table>
+      <simple-id uuid='{5893A4C7-A271-4558-B6FF-D498CACA65C9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='hubNash Monthly Request Trends'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='groupped_request_year_month_ext' name='federated.1gmbloq0zka94i1bozdfx0faq3jn' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1gmbloq0zka94i1bozdfx0faq3jn'>
+        <column datatype='string' name='[Request Type]' role='dimension' type='nominal' />
+        <column-instance column='[Request Type]' derivation='None' name='[none:Request Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98142' id='7' param='horz' type='layout-flow' w='99034' x='483' y='929'>
+            <zone h='98142' id='5' type='layout-basic' w='86602' x='483' y='929'>
+              <zone h='98142' id='3' name='monthly trends' w='86602' x='483' y='929'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='98142' id='6' param='vert' type='layout-flow' w='12432' x='87085' y='929'>
+              <zone h='7085' id='8' mode='checkdropdown' name='monthly trends' param='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' type='filter' w='12432' x='87085' y='929'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5807' id='9' name='monthly trends' pane-specification-id='2' param='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' show-title='false' type='color' w='12432' x='87085' y='8014'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97612' id='12' param='vert' type='layout-flow' w='98968' x='516' y='1194'>
+                <zone h='9104' id='8' mode='checkdropdown' name='monthly trends' param='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' type='filter' w='13282' x='86202' y='1194'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97612' id='3' is-fixed='true' name='monthly trends' w='85686' x='516' y='1194'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4328' id='9' name='monthly trends' pane-specification-id='2' param='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' show-title='false' type='color' w='13282' x='86202' y='10298'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C7F1C687-57A4-4FC3-8F47-56C81BE92311}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='monthly trends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' type='filter' />
+            <card pane-specification-id='2' param='[federated.1gmbloq0zka94i1bozdfx0faq3jn].[none:Request Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CD3639B-28FE-40B3-BF4F-E19B4862EA6D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='hubNash Monthly Request Trends'>
+      <viewpoints>
+        <viewpoint name='monthly trends'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='8' />
+      <simple-id uuid='{8B664E75-B345-4534-A69F-3C764AA9EE5B}' />
+    </window>
+  </windows>
+</workbook>
